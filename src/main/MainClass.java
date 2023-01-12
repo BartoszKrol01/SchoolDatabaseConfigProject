@@ -13,7 +13,7 @@ public class MainClass {
     public static void main(String[] args){
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/School", "postgres", "postgres");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/School", "postgres", "2ed2bfA1");
             testConnectionToDatabase(con);
             Statement statement = con.createStatement();
             createGradesTable(statement);
