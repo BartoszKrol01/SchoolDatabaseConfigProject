@@ -21,6 +21,7 @@ public class MainClass {
             createStudentsTable(statement);
             writeDataToDatabase(statement);
 
+            con.close();
         } catch (Exception e) {
             System.out.println("Error during operation on database");
             e.printStackTrace();
